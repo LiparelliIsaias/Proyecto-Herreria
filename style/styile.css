@@ -83,8 +83,7 @@ header nav a:hover {
 }
 
 span {
-  -webkit-text-decoration: underline black;
-          text-decoration: underline black;
+  text-decoration: underline black;
   font-weight: bold;
   font-style: italic;
 }
@@ -312,4 +311,6 @@ footer {
     margin-left: 10px;
   }
 }
-/* ------------------------Mixing--------------------------*//*# sourceMappingURL=style.css.map */
+/* ------------------------Mixing--------------------------*/
+
+/*# sourceMappingURL=styile.css.map */
