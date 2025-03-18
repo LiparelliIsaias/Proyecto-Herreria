@@ -83,8 +83,7 @@ header nav a:hover {
 }
 
 span {
-  -webkit-text-decoration: underline black;
-          text-decoration: underline black;
+  text-decoration: underline black;
   font-weight: bold;
   font-style: italic;
 }
@@ -312,4 +311,40 @@ footer {
     margin-left: 10px;
   }
 }
-/* ------------------------Mixing--------------------------*//*# sourceMappingURL=style.css.map */
+/* ------------------------Mixing--------------------------*/
+.buttonFormulario:hover {
+  background-color: #6c757d;
+  color: hsl(124, 82%, 43%);
+  font-size: 46px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ------------------------Animacion--------------------------*/
+.sinCostoAlguno {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  animation: colorChange 3s infinite ease-in-out;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #00b894;
+  }
+  25% {
+    color: #ff6347;
+  }
+  50% {
+    color: #3498db;
+  }
+  75% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #00b894;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

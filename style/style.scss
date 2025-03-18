@@ -150,7 +150,6 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
 .buttonFormulario{
     background-color: white;
     border: 1px black solid;
@@ -165,6 +164,7 @@ footer {
 .buttonFormulario:active{
     background-color: burlywood;
 }
+    
 
 .checkbox:required{
     color: red;
@@ -355,25 +355,43 @@ footer {
 /* ------------------------Mixing--------------------------*/
 
 
-@mixin buttonFormulario($color-fondo, $color-texto, $tamano: 16px, $radio-borde: 5px, $sombra: false) {
+@mixin buttonFormulario($color-fondo, $color-texto, $tamano) {
     background-color: $color-fondo;
     color: $color-texto;
     font-size: $tamano;
     padding: 10px 20px;
-    border: none;
-    border-radius: $radio-borde;
     cursor: pointer;
     transition: all 0.3s ease;
-  
-    @if $sombra {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  
-    &:hover {
-      opacity: 0.8;
-    }
+}
 
-    &:active {
-      transform: scale(0.98);
+.buttonFormulario:hover{
+    @include buttonFormulario ($color-gris,$color-verde,$tamano-texto)
+}
+
+/* ------------------------Animacion--------------------------*/
+
+.sinCostoAlguno {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    
+    animation: colorChange 3s infinite ease-in-out; 
+}
+  
+  @keyframes colorChange {
+    0% {
+      color: #00b894; 
+    }
+    25% {
+      color: #ff6347;
+    }
+    50% {
+      color: #3498db; 
+    }
+    75% {
+      color: #9b59b6; 
+    }
+    100% {
+      color: #00b894; 
     }
   }
