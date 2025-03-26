@@ -1,0 +1,25 @@
+/* ------------------------Animacion--------------------------*/
+.sinCostoAlguno {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    animation: colorChange 3s infinite ease-in-out;
+  }
+  @keyframes colorChange {
+    0% {
+      color: #00b894;
+    }
+    25% {
+      color: #ff6347;
+    }
+    50% {
+      color: #3498db;
+    }
+    75% {
+      color: #9b59b6;
+    }
+    100% {
+      color: #00b894;
+    }
+  }
+  

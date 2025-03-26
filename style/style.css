@@ -32,7 +32,6 @@ header nav a:hover {
   background-color: white;
   width: 75%;
 }
-
 .navegador ul {
   display: flex;
   list-style: none;
@@ -41,7 +40,6 @@ header nav a:hover {
   justify-content: end;
   margin-top: 50px;
 }
-
 .navegador ul a {
   color: black;
   margin: 0 15px;
@@ -88,44 +86,34 @@ span {
   font-style: italic;
 }
 
-/* ------------------------footer--------------------------*/
-footer {
-  text-align: center;
-  width: auto;
-  height: 30%;
-}
-
 /* ------------------------main presupuestos--------------------------*/
 .mainPresupuestos {
   padding-inline: 10px;
   background: linear-gradient(to right, white, rgb(176, 176, 176));
   min-height: 100vh;
 }
-
 .mainPresupuestos h2 {
   text-align: center;
   margin-top: 2.5em;
   font-size: 30px;
 }
-
 .mainPresupuestos h3 {
   margin: 40px 70px;
   font-size: 20px;
   text-decoration: underline;
 }
-
-.formularioPreguntas {
-  margin-top: 10px;
-  margin-left: 100px;
-  display: block;
-}
-
 .mainPresupuestos label {
   display: block;
   font-size: 16px;
   font-weight: 700;
   color: rgb(62, 62, 62);
   margin: 5px;
+}
+
+.formularioPreguntas {
+  margin-top: 10px;
+  margin-left: 100px;
+  display: block;
 }
 
 .controls {
@@ -191,12 +179,43 @@ footer {
   align-items: center;
   justify-items: center;
 }
-
 .datosContacto ul {
   list-style: none;
   margin-top: 50px;
 }
 
+/* ------------------------footer--------------------------*/
+footer {
+  text-align: center;
+  width: auto;
+  height: 30%;
+}
+
+/* ------------------------Animacion--------------------------*/
+.sinCostoAlguno {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  animation: colorChange 3s infinite ease-in-out;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #00b894;
+  }
+  25% {
+    color: #ff6347;
+  }
+  50% {
+    color: #3498db;
+  }
+  75% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #00b894;
+  }
+}
 /* ------------------------Media Queries celulares--------------------------*/
 @media (max-width: 600px) {
   body {
@@ -234,10 +253,6 @@ footer {
   .mainInicio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-inline: none;
-    height: auto;
-    width: auto;
     background: linear-gradient(to right, white, rgb(176, 176, 176));
     min-height: auto;
     margin-top: 20%;
@@ -282,35 +297,40 @@ footer {
     margin: 0px;
     font-size: 20px;
   }
-  .formularioPreguntas {
-    margin-top: 10px;
-    margin-left: 5px;
-    display: block;
-    width: auto;
-    height: auto;
-  }
-  .mainContacto {
-    background: linear-gradient(to right, white, rgb(176, 176, 176));
-    margin-top: 20%;
-  }
-  .datosContacto {
-    display: grid;
-    grid-template-rows: auto;
-    margin-top: 15%;
-    align-items: start;
-    justify-items: start;
-  }
-  .datosContacto ul {
-    list-style: none;
-    margin-top: 50px;
-  }
-  .mainNuestrosTrabajos {
-    margin-top: 20%;
-  }
-  .col-md-7 {
-    margin-left: 10px;
-  }
 }
+.formularioPreguntas {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.mainContacto {
+  background: linear-gradient(to right, white, rgb(176, 176, 176));
+  margin-top: 20%;
+}
+
+.datosContacto {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 15%;
+  align-items: start;
+  justify-items: start;
+}
+.datosContacto ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.mainNuestrosTrabajos {
+  margin-top: 20%;
+}
+
+.col-md-7 {
+  margin-left: 10px;
+}
+
 /* ------------------------Mixing--------------------------*/
 .buttonFormulario:hover {
   background-color: #6c757d;
@@ -319,32 +339,6 @@ footer {
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-/* ------------------------Animacion--------------------------*/
-.sinCostoAlguno {
-  font-size: 24px;
-  font-weight: bold;
-  display: inline-block;
-  animation: colorChange 3s infinite ease-in-out;
-}
-
-@keyframes colorChange {
-  0% {
-    color: #00b894;
-  }
-  25% {
-    color: #ff6347;
-  }
-  50% {
-    color: #3498db;
-  }
-  75% {
-    color: #9b59b6;
-  }
-  100% {
-    color: #00b894;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
